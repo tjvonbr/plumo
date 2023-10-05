@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     const response = await fetch("https://api.thenextleg.io/v2/imagine", {
       method: "POST",
       headers: {
-        Authorization: `Bearer b827b8f9-270f-469d-9d38-cf061d419406`,
+        Authorization: `Bearer ${midjourneyKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
